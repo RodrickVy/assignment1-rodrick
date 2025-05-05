@@ -17,4 +17,9 @@
 </body>
 </html>`
 }
-module.exports = {createHTMLPage}
+
+ function getRandomOneToThree() {
+     return Math.floor(Math.random() * 3) + 1;
+ }
+
+module.exports = {createHTMLPage,getRandomOneToThree}
