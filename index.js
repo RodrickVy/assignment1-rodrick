@@ -49,7 +49,8 @@ app.use(session({
         secret: node_session_secret,
         store: mongoStore, //default is memory store
         saveUninitialized: false,
-        resave: true
+        resave: true,
+        cookie: { maxAge: expireTime }
     }
 ));
 
@@ -187,7 +188,7 @@ app.get("/loginSubmit", async (req, res) => {
 
         req.session.authenticated = true;
         req.session.username = usersFound[0].username;
-        req.session.cookie.maxAge = expireTime;
+
         res.redirect('/');
 
     }else{
@@ -251,7 +252,6 @@ app.get("/signupSubmit", async (req, res) => {
 
     req.session.authenticated = true;
     req.session.username =username;
-    req.session.cookie.maxAge = expireTime;
     res.redirect('/');
 
 })
