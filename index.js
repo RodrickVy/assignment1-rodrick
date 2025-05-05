@@ -252,7 +252,7 @@ app.get("/signupSubmit", async (req, res) => {
 
     req.session.authenticated = true;
     req.session.username =username;
-    res.redirect('/');
+    res.redirect('/members');
 
 })
 
