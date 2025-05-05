@@ -1,0 +1,40 @@
+body{
+    padding:0;
+    overflow-x:clip;
+    margin:0;
+
+}
+
+.section{
+    width: 98%;
+    box-sizing: border-box;
+    padding:1rem;
+    margin:8px;
+    background: antiquewhite;
+    border-radius: 1rem;
+}
+
+.button{
+    text-decoration: none;
+    background: aquamarine;
+    color: black;
+    border-radius: 8px;
+    padding:10px;
+    margin:5px;
+    display: inline-block;
+    width: auto;
+}
+
+.label{
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.label input{
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top:5px ;
+}
